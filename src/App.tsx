@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import { cn } from './lib/utils';
 import { removeBackground } from '@imgly/background-removal';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 // --- Components ---
 
@@ -481,6 +482,7 @@ export default function App() {
           )}
         </AnimatePresence>
       </main>
+      <SpeedInsights />
     </div>
   );
 }
