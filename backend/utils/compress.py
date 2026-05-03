@@ -1,0 +1,1 @@
+img.save(buf, format="JPEG", quality=90)
