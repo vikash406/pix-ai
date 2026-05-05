@@ -231,11 +231,7 @@ export default function App() {
       const bgCtx = bgCanvas.getContext('2d');
       if (bgCtx) {
         bgCtx.drawImage(origImg, 0, 0, bgCanvas.width, bgCanvas.height);
-<<<<<<< HEAD
         const blurAmount = isLowEndDevice ? 6 : 12;
-=======
-        const blurAmount = isLowEndDevice ? 1 : 2;
->>>>>>> ae894ea (first commit with gitignore)
         bgCtx.filter = `blur(${blurAmount}px)`;
         const blurTemp = document.createElement('canvas');
         blurTemp.width = bgCanvas.width;
@@ -261,13 +257,8 @@ export default function App() {
         finalCtx.drawImage(canvas, 0, 0); // Enhanced foreground
       }
 
-<<<<<<< HEAD
       // Compress: lower quality for smaller file size on low-end devices
       const quality = isLowEndDevice ? 0.68 : 0.8;
-=======
-      // Compress: higher quality for better image fidelity
-      const quality = isLowEndDevice ? 0.85 : 0.95;
->>>>>>> ae894ea (first commit with gitignore)
       setProcessedImage(finalCanvas.toDataURL('image/jpeg', quality));
       setProgress(100);
     } catch (err) {
@@ -629,9 +620,4 @@ export default function App() {
       </footer>
     </div>
   );
-<<<<<<< HEAD
 }
-
-=======
-}
->>>>>>> ae894ea (first commit with gitignore)
