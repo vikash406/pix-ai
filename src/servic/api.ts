@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8000";
+const BASE_URL = "https://pix-ai-backend.onrender.com";
 
 export const enhanceImage = async (file: File) => {
   const formData = new FormData();

@@ -13,3 +13,14 @@ app = FastAPI()
 
 app.include_router(enhance_router, prefix="/enhance")
 app.include_router(remove_bg_router, prefix="/remove-bg")
+
+from fastapi.middleware.cors import CORSMiddleware
+ 
+ from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
