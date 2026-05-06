@@ -1,6 +1,6 @@
 from fastapi import APIRouter, UploadFile, File
 from fastapi.responses import StreamingResponse
-from ..services.enhance_service import enhance_image
+from services.enhance_service import enhance_image
 
 router = APIRouter()
 

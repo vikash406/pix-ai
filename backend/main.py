@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from .routes.enhance import router as enhance_router
-from .routes.remove_bg import router as remove_bg_router
+from routes.enhance import router as enhance_router
+from routes.remove_bg import router as remove_bg_router
 
 app = FastAPI()
 

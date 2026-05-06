@@ -1,6 +1,6 @@
 from fastapi import APIRouter, UploadFile, File, HTTPException
 from fastapi.responses import StreamingResponse
-from ..services.rembg_service import remove_bg
+from services.rembg_service import remove_bg
 
 router = APIRouter()
 
